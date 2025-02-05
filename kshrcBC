@@ -1,0 +1,28 @@
+#setting variables or env
+set -o emacs
+LS_COLORS=$LS_COLORS:'di=1;31:' ; export LS_COLORS
+
+
+
+export e="`echo x | tr x '\033'`"
+export red="${e}[31m"
+export green="${e}[32m"
+export yellow="${e}[33m"
+export blue="${e}[34m"
+export magenta="${e}[35m"
+export cyan="${e}[36m"
+export white="${e}[37m"
+export end="${e}[0m"
+export PS1="${white}${LOGNAME}${red}@`hostname`:> ${end}"
+
+
+#alias
+
+   alias setKshrc="vim ~/.kshrc"
+   alias reloadKshrc="source ~/.kshrc"
+   alias ll="ls -alth"
+
+#actions
+
+cd /opt/CA/siteminder
+~
